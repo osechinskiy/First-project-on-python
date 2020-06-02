@@ -13,9 +13,9 @@ while i == "y":
     elif choice == "*":
         print("Answer = ", numberone * numertwo)
     elif choice == "/":
-        if numberone <= 0:
-            print("Error, it is impossible to fulfill the request, it is impossible to divide by zero ")
+        if numberone:
+            print("Answer = ", numberone / numertwo)
         else:
-            ("Answer = ", numberone / numertwo)
+            print("Error, it is impossible to fulfill the request, it is impossible to divide by zero ")
 
     i = input("Do you want to refresh? y/n: ")
